@@ -1,12 +1,57 @@
-# React + Vite
+Steam Profile Comparator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web application that compares gaming statistics between two Steam profiles with real-time data from Steam Web API.
 
-Currently, two official plugins are available:
+Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Profile comparison with gaming statistics
+- Genre analysis by playtime
+- Game recommendations based on libraries
+- Co-op game finder with compatibility scoring
+- Responsive Steam-inspired design
 
-## Expanding the ESLint configuration
+Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Frontend:** React, Vite, CSS3  
+**Backend:** Node.js, Express.js  
+**API:** Steam Web API
+
+Prerequisites
+
+- Node.js (version 16+)
+- Steam Web API Key from https://steamcommunity.com/dev/apikey
+
+Installation
+
+1. Clone the repository
+2. Install dependencies
+npm install
+npm install express node-fetch cors dotenv
+
+3. Create .env file
+
+STEAM_KEY=your_steam_api_key_here
+
+text
+
+Running the Application
+
+1. Start the backend server
+
+node server.js
+
+text
+
+2. Start the frontend
+
+npm run dev
+
+3. Open http://localhost:5173 in your browser
+
+Usage
+
+1. Get Steam IDs from steamidfinder.com (17-digit numbers)
+2. Enter two Steam IDs in the input fields
+3. Click "Compare Profiles" to view detailed comparison
+4. Click profile cards to view full Steam profiles
+5. Click game cards to visit Steam store pages
